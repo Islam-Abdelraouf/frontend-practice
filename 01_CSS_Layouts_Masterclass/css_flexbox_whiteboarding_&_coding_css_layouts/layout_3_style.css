@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 10px;
+}
+
+body {
+    font-family: "poppins", sans-serif;
+}
+
+.profile-cards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #fab9b98e;
+    padding: 2rem 0rem;
+
+    margin-top: 50vh;;
+    transform:translateY(-50%);
+}
+
+.profile-cards__card {
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+}
+
+
+.profile-cards__card--img {
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profile-cards__card--info {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    row-gap: 1rem;
+}
+
+.profile-cards__card--info__name {
+    font-size: 1.7rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.profile-cards__card--info__role {
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: gray;
+}
