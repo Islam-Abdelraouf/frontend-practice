@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 10px;
+}
+
+body {
+    font-family: "poppins", Arial, Helvetica, sans-serif
+}
+
+h1 {
+    margin-top: 5rem;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 5rem;
+    font-weight: 300;
+    color: blueviolet;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 5rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+    border: 1px solid blueviolet;
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
+.component {
+    display: flex;
+    width: 30rem;
+    /* margin: 5rem auto; */
+    padding: 2rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    background: linear-gradient(324deg, rgba(255, 150, 250, 1) 0%, rgba(255, 0, 242, 1) 100%);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+    transition: all 200ms ease-in-out;
+}
+
+.component:hover {
+    transform: rotate(-1deg);
+
+}
+
+.left-div h2 {
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.left-div p {
+    font-size: 1.15rem;
+    color: #fff;
+    margin: 0.5rem 2rem 0 0;
+}
+
+span {
+    flex-shrink: 0;
+    align-self: start;
+
+    padding: 0.3rem 1rem;
+    border-radius: 5rem;
+
+    font-size: 1.3rem;
+    font-weight: 500;
+
+    background-color: blueviolet;
+    color: #fff;
+}
