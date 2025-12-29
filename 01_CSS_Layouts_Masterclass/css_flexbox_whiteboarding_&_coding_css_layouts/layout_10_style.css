@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 10px;
+}
+
+body {
+    font-family: "poppins", Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 255, 255);
+    line-height: 1.5;
+}
+
+.card {
+    width: 450px;
+    /* border: 1px solid silver; */
+    border-radius: 1rem;
+    padding-bottom: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+
+    margin-top: 5rem;
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card__img {
+    align-self: stretch;
+}
+
+.card__img img {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 2rem;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.card-content {
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card__price,
+.card__title,
+.card__description {
+    align-self: flex-start;
+    margin-bottom: 1rem;
+
+}
+
+.card__price,
+.card__btn {
+
+    background-color: rgb(25, 26, 39);
+    color: white;
+    border-radius: 0.5rem;
+}
+
+.card__price {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 0.5rem 1.5rem;
+}
+
+.card__title {
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+.card__description {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.card__btn {
+    align-self: end;
+    padding: 1rem 2rem;
+    border: none;
+    outline: none;
+    font-size: 1.75rem;
+    font-weight: 600;
+    cursor: pointer;
+}
